@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recursos em HTML5">
+    <meta name="author" content="Vinícius e Davi Gabriel">
+    <link rel="stylesheet" href="style.css">
+    <title>Página sobre Recursos em HTML5</title>
+</head>
+<body>
+    <header>
+        <h1>Explorando recursos em HTML5</h1>
+    <nav id="menu">
+        <a href="#paragrafo">| Parágrafos |</a>
+        <a href="#listas">| Listas |</a>
+        <a href="#tabela">| Tabela |</a>
+        <a href="#formulario">| Formulário |</a>
+        <a href="#midia">| Mídia |</a>
+    </nav>
+    </header>
+<br><br><br>
+    <section id="paragrafo">
+        <h2>Parágrafos e Formatação de Texto</h2>
+        <p>Este é um parágrafo básico, O elemento <code>&lt;p&gt;</code> é usado para criar parágrafos em HTML.</p>
+        <p><strong>Texto em negrito</strong> pode ser criado com o elemento <code>&lt;strong&gt;</code>.</p>
+        <p><em>Texto em Itálico</em> pode ser criado com o elemento <code>&lt;em&gt;</code> ou <code>&lt;i&gt;</code>.</p>
+    </section>
+    <br>
+    <section id="Replica_fordista">
+        <h2>Esse segundo bloco, por sua vez, é do segundo aluno</h2>
+        <p>Essa linha, bem menor que a anterior, foi feita com <code>&lt;p&gt;</code> para criar o parágrafo</p>
+
+        <!--Quebra de linha para separar o uso de símbolos do uso de itálicos ou negritos-->
+        <p id="neg_it">
+            <strong>O negrito é usado para reforçar certas informações</strong>. Ele é de fato muito útil, dependendo do que você procurar fazer e, para "negritar", deve-se usar a tag <code>&lt;strong&gt;</code> ou <code>&lt;b&gt;</code>.
+        <br><br>
+            <em>Já este texto poderia ser uma citação, caso fosse acadêmico</em>. Eu o fiz com <code>&lt;em&gt;</code>, mas poderia ter usado <code>&lt;i&gt;</code>
+        </p>
+        <br>
+
+        <!--Vamos fazer uma linha horizontal-->
+        <hr>
+        <p>Essa linha é um divisor. Foi realmente <strong>útil</strong> conhecer esse código (<code>&lt;hr&gt;</code>), simples mas poderoso.</p>
+	<br>
+    </section>
+    <br>  
+    <section id="listas">
+        <h2>Listas</h2>
+        <!--Lista não ordenada-->
+        <h3>Lista não ordenada</h3>
+        <ul type="square">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <p>Esta é uma <strong>lista não ordenada</strong>, criada com <code>&lt;ul&gt;</code>.</p>
+        <br>
+        <!--Dessa vez vamos 'colocar ordem'-->
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li>Primeiro Item</li>
+            <li>Segundo Item</li>
+            <li>Terceiro Item</li>
+        </ol>
+        <p>Esta lista possui uma numeração em si, visto que é <strong>ordenada</strong>. Para fazer essa lista diferente, use o código <code>&lt;ol&gt;</code>.</strong:></p>
+        <p><strong>ATENÇÃO: cada item deve ser indicado por tags <code>&lt;li&gt;</code> e <code>&lt;/li&gt;</code>. Caso contrário... Não vai funcionar.</strong></p>
+        <br>
+    </section>
+<br><hr>
+    <section id="tabela">
+	<p>-- Texto a seguir escrito por Vinícius (novamente)</p>
+        <h2>Tabela</h2>
+        <table border="1">
+            <caption>Exemplo de Tabela</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jacques</td>
+                    <td>29</td>
+                    <td>Engenheiro</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>28</td>
+                    <td>Historiadora</td>
+                </tr>
+                <tr>
+                    <td>Telma</td>
+                    <td>46</td>
+                    <td>Professora</td>
+                </tr>
+            </tbody>
+            </table>
+            <p>Esta tabela é criada com o elemento <code>&lt;table&gt;</code>. Os cabeçalhos são definidos com <code>&lt;th&gt;</code> e as células com o <code>&lt;td&gt;</code></p>
+    </section>
+
+    <section id="formulario">
+        <h2>Formulário</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" maxlength="8"><br><br>
+            <label for="e-mail">E-mail</label>
+            <input type="text" id="e-mail" name="e-mail"><br><br>
+
+            <label for="aceito">Aceito os Termos</label>
+            <input type="checkbox" id="aceito" name="aceito"><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Este formulário contem diferentes tipos de entradas de dados, como <code>&lt;input&gt;</code> e <code>&lt;label&gt;</code>.</p>
+    </section>
+<br><hr><br>
+    <section id="midia">
+        <!--Imagem-->
+        <h2>Mídia</h2>
+            <h3>Imagem</h3>
+            <img class="imagem" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTCHTncdGxCa5LllTAAqgT5FHcC4kTOyzZHvJoGPQPQGkzpd5pdw6x8bpzd65rx2R9ILxzgr54HNV2NG3dDh6ILSWcG0w8moZGHp_A7HowV&usqp=CAE" alt="Pinball">
+        <p>Esse arquivo foi incluído no corpo do Site usando os códigos <strong><code>&lt;img&gt;</code>, <code>&lt;src&gt;</code> e <code>&lt;alt&gt;</code></strong>. "img" indica que a mídia referenciada será uma imagem, enquanto "src" fornece a origem do arquivo e "alt", uma descrição </p>
+    <!--Vídeo-->
+    <br>
+    <h3>Vídeo</h3>
+    <video controls width="300">
+        <source class="video" src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    </section>
+
+    <footer>
+        <p>&copy;2024 - Desenvolvido por Vinícius Pires e Davi Gabriel</p>
+    </footer>
+</body>
+</html>
